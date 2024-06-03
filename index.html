@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: darkgrey;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .navbar a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+            padding: 20px;
+        }
+        .navbar a:hover {
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+        .navbar img {
+            margin-left: auto;
+            padding: 20px;
+            width: 200px;
+        }
+        .home {
+            width: 100%;
+            height: 660px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+        #container {
+            background-color: black;
+            width: 810px;
+            height: 700px;
+        }
+        #container p {
+            font-size: 40px;
+            font-style: italic;
+            color: white;
+        }
+        #container h1 {
+            font-size: 60px;
+            color: white;
+        }
+        #container span {
+            color: red;
+        }
+        #container_sub {
+            text-align: center;
+            padding-top: 90px;
+        }
+        #container1 {
+            background-color: black;
+            width: 810px;
+            height: 700px;
+        }
+        #container1 img {
+            height: 500px;
+            width: 500px;
+            padding-top: 70px;
+            padding-left: 60px;
+        }
+        /* ******************************about*********************************** */
+        section{
+            padding: 0;
+            margin: 0;
+        }
+        /* #about, #skills, #contact {
+            padding: 60px 20px;
+            background-color: white;
+            text-align: center;
+        } */
+        h2 {
+            font-size: 50px;
+        }
+        #sec1{
+            background-color: black;
+            width: 810px;
+            height: 700px;
+        }
+        
+        #sec1 img{
+            width: 400px;
+            height: 400px;
+            border-radius: 1000px;
+            padding-left: 180px;
+        }
+        #sec_1{
+            background-color: black;
+            color: white;
+            width: 820px;
+            height: 700px;
+        }
+        .cont_sec{
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+        }
+        #sec_11{
+            font-size: 20px;
+        }
+        #sec_11 span{
+            color: red;
+        }
+/* **************************skills************************** */
+        .skills{
+            width: 100%;
+            height: 350px;
+            background-color: black;
+            padding: 20px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #skills_1{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            border: 15px solid burlywood;
+            border-radius: 25px;
+            background-size: cover;
+        }
+        #skills_1:hover{
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+        #skills_1_1{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            border: 15px solid burlywood;
+            border-radius: 25px;
+        }
+        #skills_1_1 :hover{
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+        #skills_1_2{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            border: 15px solid burlywood;
+            border-radius: 25px;
+        }
+        #skills_1_2 :hover{
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+        .skills2{
+            width: 100%;
+            height: 350px;
+            background-color: black;
+            padding: 20px 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #skills_2_1{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            border: 15px solid burlywood;
+            border-radius: 25px;
+        }
+        #skills_2_1:hover{
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+
+        #skills_2_2{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            border: 15px solid burlywood;
+            border-radius: 25px;
+        }
+        #skills_2_2 :hover{
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+        #skills_2_3{
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            border: 15px solid burlywood;
+            border-radius: 25px;
+        }
+        #skills_2_3 :hover{
+            background-color: beige;
+            color: darkslategray;
+            border-radius: 10px;
+            transform: scale(0.8);
+            box-shadow: 10px 10px 10px;
+        }
+        #contact {
+    padding: 60px 20px;
+    background-color: white;
+   
+    text-align: center;
+}
+
+#contact h2 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding: 60px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+#contact h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 400px;
+   height: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.footer {
+            background-color: darkgrey;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHq6OViYyjIqZk3d5B5gP+8eV2+e+Bo0JlwHG4Wo5td0kO5LhtLT9ljfySy5UR+0z6qzEwlg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#skillss">My Skills</a>
+        <a href="#contact">Contact me</a>
+        <img src="https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="250px">
+    </div>
+    <div id="home" class="home">
+        <div id="container">
+            <div id="container_sub">
+                <p>Hello my name is</p>
+                <h1>
+                    <span>Karthik K</span><br>
+                    I'm a <span>Web developer</span><br>
+                    <p>from Bengaluru</p>
+                </h1>
+            </div>
+        </div>
+        <div id="container1">
+            <img src="image.jpeg" width="400px">
+        </div>
+    </div>
+<!-- *************************************Section 1*********************************** -->
+    <section id="about">
+        <div class="cont_sec">
+        <div id="sec1">
+            <img src = "image.jpeg">
+        </div>
+        <div id="sec_1">
+            <div id="sec_11">
+                <h2><span>About Me</span></h2>
+        <p>Hello! My name is Karthik K. I am a passionate Web Developer based in Bengaluru with a knack for creating visually appealing and user-friendly websites.</p>
+        <h3><span>Education</span></h3>
+        <p>Currently iam persuing a  Bachelor's degree in Computer Science and Engineering from Presidency University. I have also completed several online courses in web development and user experience design.</p>
+        
+        <h3><span>Personal Interests</span></h3>
+        <p>When I'm not coding, I enjoy:
+            <ul>
+                <li>Exploring the vibrant food scene in Bengaluru</li>
+                <li>Travelling to new places and experiencing different cultures</li>
+                <li>Playing cricket and carrom</li>
+                <li>Reading books on technology and personal development</li>
+            </ul>
+        </p>
+        <h3><span>Let's Connect</span></h3>
+        <p>I'm always open to new opportunities and collaborations. Feel free to <a href="#contact">reach out</a>!</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- ****************************skills****************************** -->
+    <section id="skillss"> 
+        
+    <div class="skills">
+       <div id="skills_1">
+            <img src = "java.jpeg" width = "250px" height = "250px">
+        </div>
+        <div id="skills_1_1">
+            <img src = "python.jpeg" width = "250px" height = "250px">
+        </div>
+        <div id="skills_1_2">
+            <img src = "javascript.png" width = "250px" height = "250px">
+        </div>
+ 
+    </div>
+
+        <div class="skills2">
+            <div id="skills_2_1">
+                <img src = "html.png" width = "250px" height = "250px">
+            </div>
+            <div id="skills_2_2">
+                <img src = "css.jpeg" width = "250px" height = "250px">
+            </div>
+            <div id="skills_2_3">
+                <img src = "sql.png" width = "250px" height = "250px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="kkarthikk50662@gmail.com" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        <p>&copy; 2024 Karthik K. All rights reserved.</p>
+    </div>
+</body>
+</html>
